@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "century-health-data-engineering"
+version = "0.1.0"
+description = "A data engineering pipeline for Century Health using Kedro."
+authors = ["Devdutt Rahul <tech.devduttrahul@gmail.com>"]
+license = "MIT"
+
+[tool.kedro]
+package_name = "src"
+project_name = "century-health-data-engineering"
+source_dir = "src"
+output_dir = "data/08_reporting"
+ignore_patterns = [".ipynb_checkpoints"]
+
+[tool.kedro.project]
+kedro_init_version = "0.18.10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+kedro = ">=0.18.0,<0.19.0"
+pandas = "^1.5.3"
+pyarrow = "^10.0.1"
+fsspec = "^2022.7.1"
+openpyxl = "^3.1.5"
+sqlalchemy = "^2.0.36"
+rich = "^12.6.0"
+jupyter = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+ipykernel = "^6.20.0"
+rope = "^0.21.1"
+black = "^23.1.0"
+flake8 = "^6.0.0"
+pytest = "^7.2.0"
+pytest-mock = "^3.10.0"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"

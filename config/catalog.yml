@@ -1,0 +1,23 @@
+patients:
+  type: pandas.CSVDataSet
+  filepath: data/raw/patients.csv
+
+encounters:
+  type: pandas.ParquetDataSet
+  filepath: data/raw/encounters.parquet
+
+symptoms:
+  type: pandas.CSVDataSet
+  filepath: data/raw/symptoms.csv
+
+medications:
+  type: pandas.CSVDataSet
+  filepath: data/raw/medications.csv
+
+conditions:
+  type: pandas.ExcelDataSet
+  filepath: data/raw/conditions.xlsx
+
+master_table:
+  type: pandas.CSVDataSet
+  filepath: data/final/master_table.csv

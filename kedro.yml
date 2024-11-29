@@ -1,0 +1,7 @@
+pipeline_name: main
+source_dir: src
+data_dir: data
+notebooks_dir: notebooks
+project_name: century-health-data-engineering
+repo_name: century_health_data_engineering
+python_package: century_health_data_engineering

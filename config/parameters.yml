@@ -1,0 +1,2 @@
+columns_to_drop: ["address", "phone_number"]
+merge_strategy: "inner"

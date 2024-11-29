@@ -1,0 +1,8 @@
+kedro==0.18.3
+pandas
+numpy
+sqlalchemy
+matplotlib
+seaborn
+openpyxl
+pyarrow
